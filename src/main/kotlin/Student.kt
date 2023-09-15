@@ -1,9 +1,15 @@
 open class Student: Person() {
-    val grade: String = "";
+    val Student_ID: String = "";
+    val Major: String = "";
+    val Year: Int = 0;
+    val Semester: Int = 0;
+    val College: String = "";
+    val grade: Int = 0;
+
     override fun Register(UID: Int): String{
        return "Your Registered for Student: $UID";
     }
-    public fun getGrade(course: Int): String{
+    public fun getGrade(course: Int): Int{
         return grade;
     }
 

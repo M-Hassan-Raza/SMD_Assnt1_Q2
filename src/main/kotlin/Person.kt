@@ -5,17 +5,17 @@ abstract class Person {
     val Phone: Int = 0;
     val Profession: String = ""
 
-    open fun Register(UID: Int){
-        System.out.println("You registered successfully for: $UID")
+    open fun Register(UID: Int): String{
+        return "You registered successfully for: $UID"
     }
-    public fun Perform(duty: String){
-        System.out.println("")
+    public fun Perform(duty: String): String{
+        return "You sucessfully performed $duty duty";
     }
-    public fun Include(service: String){
-        System.out.println("You included: $service")
+    public fun Include(service: String): String{
+        return "You included: $service";
     }
-    public fun Like(item: String){
-        System.out.println("You liked: $item");
+    public fun Like(item: String): String{
+        return "You liked: $item";
     }
 
 }

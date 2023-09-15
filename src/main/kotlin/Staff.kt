@@ -9,6 +9,12 @@ open class Staff: Person() {
         return "You successfully attended the $duty duty";
     }
 
+    public fun getPromotion(): String{
+        return "Congrats! You are now promoted <3";
+    }
 
+    public fun getSalary(): Float{
+        return Salary
+    }
 
 }

@@ -1,25 +1,25 @@
-open class Student: Person() {
-    val Student_ID: String = "";
-    val Major: String = "";
-    val Year: Int = 0;
-    val Semester: Int = 0;
-    val College: String = "";
-    val grade: Int = 0;
+open class Student(
+    val Student_ID: String,
+    val Major: String,
+    val Year: Int,
+    val Semester: Int,
+    val College: String,
+    val grade: Int
+) : Person() {
 
-    override fun Register(UID: Int): String{
-       return "Your Registered for Student: $UID";
-    }
-    public fun getGrade(course: Int): Int{
-        return grade;
+    override fun Register(UID: Int): String {
+        return "You are registered as Student with UID: $UID"
     }
 
-    public fun Attend(course_class: Int): String{
-        return "You successfully attended: $course_class"
+    fun getGrade(course: Int): Int {
+        return grade
     }
 
-    public fun Learn(): String{
-        return "You successfully another concept!";
+    fun Attend(course_class: Int): String {
+        return "You attended course class $course_class successfully."
     }
 
-
+    fun Learn(): String {
+        return "You successfully learned another concept!"
+    }
 }

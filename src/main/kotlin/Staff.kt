@@ -2,7 +2,7 @@ open class Staff(
     val Emp_ID: String,
     val Emp_Role: String,
     val Emp_Dept: String,
-    val Salary: Float,
+    val Emp_Salary: Float,
     val Emp_Experience: Int
 ) : Person() {
 
@@ -15,6 +15,6 @@ open class Staff(
     }
 
     fun getSalary(): Float {
-        return Salary
+        return Emp_Salary
     }
 }
